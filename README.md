@@ -7,6 +7,8 @@ For this task you would need to install the following:
 1. Java SDK (preferably 1.8)  
 2. Git ([setup](https://help.github.com/articles/set-up-git/))  
 3. Maven ([setup](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html))  
+    * make sure you can run the command `mvn --version` from anywhere in the CMD console (or terminal)  
+    * If not - you will need to add (maven installation folder)/bin to your `PATH` system variable, [see instructions] ( http://www.mkyong.com/maven/how-to-install-maven-in-windows/).  
 
 ---
 
@@ -20,7 +22,9 @@ b) **show-words** : prints all words ordered by alphabet.
 1. Create a Github account, or use yours, if you already have one.  
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository.  
 1. Here's how you run the server:  
-  1. [clone](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork) the  repository to your local computer. say: `C:\workspace\simple-service`  (or `~/workspace/simple-service` on linux).  
+  1. [clone](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork) the  repository to your local computer. 
+     * Please note the codebase local location, that is your root workspace dir  
+     * It can be , for instance : `C:\workspace\simple-service`  (or `~/workspace/simple-service` on linux).  
   1. Go to that directory with CMD console (or Terminal, if your on Linux) `mvn clean install`   
   1. BUILD SUCCESS? great! now run `mvn exec:java` this will start the local server  
   1. Open your browser and browse to `http://localhost:8080/myapp/words/index?word=servicefriend`  
