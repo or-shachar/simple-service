@@ -1,4 +1,4 @@
-# Simple Java webapp tast
+# Simple Java webapp home-task
 This task is mainly to test your basic sytax and tools learning abilities.
 
 ## prerequsities
