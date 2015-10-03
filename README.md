@@ -1,5 +1,6 @@
 # Simple Java webapp home-task
-This task is mainly to test your basic sytax and tools learning abilities.
+This task is mainly to test your basic sytax and tools learning abilities.  
+while the actual coding task is rather simple, what we want to see here is your ability to self-learn the basics of industry tools such as Git, maven and web framework like Jersey.
 
 ## prerequsities
 
