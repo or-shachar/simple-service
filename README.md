@@ -4,7 +4,7 @@ This task is mainly to test your basic reverse-engineering and tools learning ab
 while the actual coding task is rather simple, what we want to see here is your ability to self-learn the basics of industry tools such as Git, maven and web framework like Jersey.  
 **Note: this task should take you *no longer than 2 hours***
 
-## prerequsities
+## prerequisites
 
 For this task you would need to install the following:  
 1. Java SDK (preferably 1.8)  
