@@ -32,7 +32,7 @@ b) **show-words** : prints all words ordered by alphabet.
   1. BUILD SUCCESS? great! now run `mvn exec:java` this will start the local server  
   1. Open your browser and browse to `http://localhost:8080/myapp/words/index?word=servicefriend`  
   1. Your browser should print  
-   > *Thanks for sending: **servicefriend***  
+   > *Thanks for sending: servicefriend*  
   1. On your local source code: locate the class: `MyResource.java`:  
     * the method **indexIt** is in charge of the service we've tested but it doesn't do what it supposed to do. It only prints the word back and doesn't store it.
     * the method **showIt** is still unplemented.
