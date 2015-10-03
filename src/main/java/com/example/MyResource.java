@@ -16,21 +16,22 @@ public class MyResource {
      * Method handling HTTP GET requests. The returned object will be sent
      * to the client as "text/plain" media type.
      *
-     * @return String that will be returned as a text/plain response.
+     * This method would index (save) the given word
+     * @return Confirmation string
      */
     @GET
     @Path("index")
     @Produces(MediaType.TEXT_PLAIN)
     public String indexIt(
     		@QueryParam("word") String word) {
+    	// TODO: store the word
         String ret = (String.format("Thanks for sending: %s", word));
         return ret;
     }
     
     
     /**
-     * Method handling HTTP GET requests. The returned object will be sent
-     * to the client as "text/plain" media type.
+     * Returns all indexed words ordered by alphabet.
      *
      * @return String that will be returned as a text/plain response.
      */
@@ -38,6 +39,7 @@ public class MyResource {
     @Path("show")
     @Produces(MediaType.TEXT_PLAIN)
     public String showIt() {
+    	// TODO : implement
         return "Please implement";
     }
 }
