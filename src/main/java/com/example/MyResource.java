@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.Set;
+import java.util.TreeSet;
 import javax.ws.rs.GET;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.Path;
@@ -11,6 +13,8 @@ import javax.ws.rs.core.MediaType;
  */
 @Path("words")
 public class MyResource {
+
+	private static Set<String> words = new TreeSet<String>();
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -24,7 +28,7 @@ public class MyResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String indexIt(
     		@QueryParam("word") String word) {
-    	// TODO: store the word
+    	words.add(word);
         String ret = (String.format("Thanks for sending: %s", word));
         return ret;
     }
@@ -39,7 +43,8 @@ public class MyResource {
     @Path("show")
     @Produces(MediaType.TEXT_PLAIN)
     public String showIt() {
-    	// TODO : implement
-        return "Please implement";
+    	String allwords = words.toString();
+    	allwords = allwords.substring(1, allwords.length()-1).replaceAll(", ","\n");
+        return allwords;
     }
 }
