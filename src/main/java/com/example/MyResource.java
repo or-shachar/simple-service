@@ -43,9 +43,8 @@ public class MyResource {
     @Path("show")
     @Produces(MediaType.TEXT_PLAIN)
     public String showIt() {
-    	for (String word: words){
-    		System.out.println(word);
-    	}
-        return "Please implement";
+    	String allwords = words.toString();
+    	allwords = allwords.substring(1, allwords.length()-1).replaceAll(", ","\n");
+        return allwords;
     }
 }
